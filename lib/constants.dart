@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 //Color Constants
 
 const kTextColor = Color(0xFF221F60);
-const kTabsColor = Color(0xFFF5F6FA);
+const kTabsColor = Color(0xFFECEFF9);
 const kInactiveSelectionColor = Color(0xFF918FB7);
 const kActiveSecondaryColor = Color(0xFF4B44D4);
 const kDeleteButtonColor = Color(0xFFFF74AF);
