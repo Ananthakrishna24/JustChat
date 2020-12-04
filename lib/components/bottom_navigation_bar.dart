@@ -1,42 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:justchat/constants.dart';
 
-class BottomNavigation extends StatefulWidget {
-  @override
-  _BottomNavigationState createState() => _BottomNavigationState();
-}
+class BottomNavigation extends StatelessWidget {
+  const BottomNavigation({
+    Key key,
+  }) : super(key: key);
 
-class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.white,
-      selectedItemColor: kActiveSecondaryColor,
-      unselectedItemColor: kInactiveSelectionColor,
-      selectedFontSize: 14,
-      unselectedFontSize: 14,
+      items: items,
       onTap: (value) {
-        // Respond to item press.
+        Navigator.pushNamed(context, 'loginscreen');
       },
-      items: [
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(Icons.chat_bubble),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(Icons.music_note),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(Icons.location_on),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(Icons.library_books),
-        ),
-      ],
     );
   }
 }

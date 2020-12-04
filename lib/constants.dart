@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 //Color Constants
@@ -33,3 +34,38 @@ var varkSearchBarTextStyle = TextStyle(
   fontSize: 14,
   color: kInactiveSelectionColor,
 );
+
+final items = <BottomNavigationBarItem>[
+  BottomNavigationBarItem(
+    icon: Icon(
+      CupertinoIcons.bubble_right_fill,
+      color: kActiveSecondaryColor,
+      size: 30,
+    ),
+    label: (""),
+  ),
+  BottomNavigationBarItem(
+    icon: Icon(
+      CupertinoIcons.person_2_fill,
+      color: kInactiveSelectionColor,
+      size: 30,
+    ),
+    label: (""),
+  ),
+  BottomNavigationBarItem(
+    icon: Icon(
+      CupertinoIcons.person_fill,
+      color: kInactiveSelectionColor,
+      size: 30,
+    ),
+    label: (""),
+  ),
+  BottomNavigationBarItem(
+    icon: Icon(
+      Icons.settings,
+      color: kInactiveSelectionColor,
+      size: 30,
+    ),
+    label: (""),
+  ),
+];

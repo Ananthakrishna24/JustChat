@@ -1,13 +1,16 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:justchat/components/bottom_navigation_bar.dart';
 import 'package:justchat/components/input_box.dart';
 import 'package:justchat/constants.dart';
-import 'package:justchat/screens/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  final controller = ScrollController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigation(),
       body: SafeArea(
         bottom: false,
         child: Column(
@@ -91,7 +94,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
