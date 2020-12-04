@@ -1,6 +1,6 @@
 # justchat
 
-A new Flutter application.
+A Flutter Chat application UI.
 
 ## Getting Started
 
